@@ -1,17 +1,3 @@
-/*
- * Created by Linh Ngo in 8/3/2017
- */
-//==============================
-// N QUEENS ALGORITHM
-//==============================
-/* Function to check constraints
- * @param: rows : check through all rows from 0 to rows - 1
- * @param: column = j in main function eachRow()
- * @param: solution is an array where index is the row and
- * value at each index is the column where queen is placed in each row
- * @return: True if in column j, no queen is placed from 0 to rows - 1  
- * */
-// each solution is an array
 const meetConstraints = (rows, column, solution) => {
     for (let i = 0; i < rows; i++) {
         if (solution[i] === column ||
